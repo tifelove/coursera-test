@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div .container {
+    top: 60px;
+}
+
+
+/********* Simple Responsive Framework ********/
+
+.row {
+    width: 100%;
+}
+
+.sec1,
+.sec2,
+.sec3 {
+    float: left;
+    padding: 10px;
+}
+
+.content {
+    background-color: #6ee6de;
+    padding: 0 20px;
+    color: #000;
+    border: 1px solid #000;
+}
+
+#mojito {
+    background-color: #20f7ba;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    width: 120px;
+    height: 30px;
+    float: right;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#pork {
+    background-color: #20a5f7;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    width: 120px;
+    height: 30px;
+    float: right;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#pancake {
+    background-color: #e354af;
+    color: #000;
+    text-align: center;
+    border: 1px solid #000;
+    margin-top: 0px;
+    width: 120px;
+    height: 30px;
+    float: right;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+
+/********** For large devices **********/
+
+@media only screen and (min-width: 992px) {
+    .sec1,
+    .sec2,
+    .sec3 {
+        display: inline-block;
+        width: 33%;
+    }
+}
+
+
+/********** For Medium devices **********/
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .sec1,
+    .sec2,
+    .sec3 {
+        display: inline-block;
+    }
+    .sec1,
+    .sec2 {
+        width: 50%;
+    }
+    .sec3 {
+        width: 100%;
+    }
+}
+
+
+/********** For Mobile device **********/
+
+@media only screen and (max-width: 767px) {
+    .sec1,
+    .sec2,
+    .sec3 {
+        display: inline-block;
+        width: 100%;
+    }
+}
